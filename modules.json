@@ -1,0 +1,102 @@
+{
+  "name": "nf-core/biscuit",
+  "homePage": "https://github.com/nf-core/biscuit",
+  "repos": {
+    "https://github.com/nf-core/modules.git": {
+      "modules": {
+        "nf-core": {
+          "biscuit/align": {
+            "branch": "master",
+            "git_sha": "41dfa3f7c0ffabb96a6a813fe321c6d1cc5b6e46",
+            "installed_by": ["modules"]
+          },
+          "biscuit/biscuitblaster": {
+            "branch": "master",
+            "git_sha": "41dfa3f7c0ffabb96a6a813fe321c6d1cc5b6e46",
+            "installed_by": ["modules"]
+          },
+          "biscuit/epiread": {
+            "branch": "master",
+            "git_sha": "41dfa3f7c0ffabb96a6a813fe321c6d1cc5b6e46",
+            "installed_by": ["modules"]
+          },
+          "biscuit/index": {
+            "branch": "master",
+            "git_sha": "41dfa3f7c0ffabb96a6a813fe321c6d1cc5b6e46",
+            "installed_by": ["modules"]
+          },
+          "biscuit/mergecg": {
+            "branch": "master",
+            "git_sha": "41dfa3f7c0ffabb96a6a813fe321c6d1cc5b6e46",
+            "installed_by": ["modules"]
+          },
+          "biscuit/pileup": {
+            "branch": "master",
+            "git_sha": "41dfa3f7c0ffabb96a6a813fe321c6d1cc5b6e46",
+            "installed_by": ["modules"]
+          },
+          "biscuit/qc": {
+            "branch": "master",
+            "git_sha": "41dfa3f7c0ffabb96a6a813fe321c6d1cc5b6e46",
+            "installed_by": ["modules"]
+          },
+          "biscuit/vcf2bed": {
+            "branch": "master",
+            "git_sha": "41dfa3f7c0ffabb96a6a813fe321c6d1cc5b6e46",
+            "installed_by": ["modules"]
+          },
+          "fastqc": {
+            "branch": "master",
+            "git_sha": "41dfa3f7c0ffabb96a6a813fe321c6d1cc5b6e46",
+            "installed_by": ["modules"]
+          },
+          "multiqc": {
+            "branch": "master",
+            "git_sha": "e10b76ca0c66213581bec2833e30d31f239dec0b",
+            "installed_by": ["modules"]
+          },
+          "samblaster": {
+            "branch": "master",
+            "git_sha": "41dfa3f7c0ffabb96a6a813fe321c6d1cc5b6e46",
+            "installed_by": ["modules"]
+          },
+          "samtools/bgzip": {
+            "branch": "master",
+            "git_sha": "c8be52dba1166c678e74cda9c3a3c221635c8bb1",
+            "installed_by": ["modules"]
+          },
+          "samtools/faidx": {
+            "branch": "master",
+            "git_sha": "c8be52dba1166c678e74cda9c3a3c221635c8bb1",
+            "installed_by": ["modules"]
+          },
+          "samtools/flagstat": {
+            "branch": "master",
+            "git_sha": "e334e12a1e985adc5ffc3fc78a68be1de711de45",
+            "installed_by": ["modules"]
+          },
+          "samtools/index": {
+            "branch": "master",
+            "git_sha": "c8be52dba1166c678e74cda9c3a3c221635c8bb1",
+            "installed_by": ["modules"]
+          },
+          "samtools/sort": {
+            "branch": "master",
+            "git_sha": "c8be52dba1166c678e74cda9c3a3c221635c8bb1",
+            "installed_by": ["modules"]
+          },
+          "samtools/view": {
+            "branch": "master",
+            "git_sha": "c8be52dba1166c678e74cda9c3a3c221635c8bb1",
+            "installed_by": ["modules"]
+          },
+          "trimgalore": {
+            "branch": "master",
+            "git_sha": "41dfa3f7c0ffabb96a6a813fe321c6d1cc5b6e46",
+            "installed_by": ["modules"]
+          }
+        }
+      }
+    }
+  }
+}
