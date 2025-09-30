@@ -1,5 +1,5 @@
 process BISCUIT_INDEX {
-    tag "$fasta"
+    tag "${meta.id}"
     label 'process_long'
 
     conda "${moduleDir}/environment.yml"
