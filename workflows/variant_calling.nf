@@ -13,6 +13,7 @@ workflow VARIANT_CALLING {
     mask_bed
 
     main:
+
     filtered_bam = bam
 
     if (params.remove_blr) {
