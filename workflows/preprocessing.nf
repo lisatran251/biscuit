@@ -1,9 +1,8 @@
 nextflow.enable.dsl=2
 
-include { BISCUIT_INDEX } from '../modules/nf-core/biscuit/index/main.nf'
-include { BISCUIT_ALIGN } from '../modules/nf-core/biscuit/align/main.nf'
+include { BISCUIT_INDEX }   from '../modules/nf-core/biscuit/index/main.nf'
+include { BISCUIT_ALIGN }   from '../modules/nf-core/biscuit/align/main.nf'
 include { SAMTOOLS_MARKDUP } from '../modules/local/markdup.nf'
-
 
 workflow PREPROCESSING {
     take:
@@ -18,6 +17,5 @@ workflow PREPROCESSING {
     emit:
         index        = BISCUIT_INDEX.out.index
         markdup_bams = SAMTOOLS_MARKDUP.out.bam
-
+        markdup_bais = SAMTOOLS_MARKDUP.out.bai
 }
-
