@@ -14,6 +14,8 @@ process BISCUIT_PILEUP {
     tuple val(meta), path("${meta.id}.vcf"), emit: vcf
     path "versions.yml", emit: versions
 
+    publishDir "results/${meta.id}/pileup", mode: 'copy'
+
     script:
     def cpus = task.cpus
     def prefix = meta.id

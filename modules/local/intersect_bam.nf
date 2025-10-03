@@ -11,6 +11,8 @@ process BEDTOOLS_INTERSECT_BAM {
     output:
     tuple val(meta), path("${meta.id}.blremoved.bam"), path("${meta.id}.blremoved.bam.bai"), emit: bam
 
+    publishDir "results/${meta.id}/intersect", mode: 'copy'    
+
     script:
     """
     bedtools intersect -v -abam $bam -b $bed > ${meta.id}.blremoved.bam

@@ -15,6 +15,8 @@ process SAMTOOLS_MARKDUP {
     tuple val(meta), path("${meta.id}.markdup.bam.bai"), emit: bai
     path "versions.yml", emit: versions
 
+    publishDir "results/${meta.id}/markdup", mode: 'copy'
+
     script:
     """
     samtools markdup -@ $task.cpus -T ${meta.id} $input ${meta.id}.markdup.bam

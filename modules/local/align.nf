@@ -12,7 +12,7 @@ process ALIGN {
     output:
     tuple val(sample), path("${sample}.aln.sam"), emit: sam
     path "versions.yml", emit: versions
-
+    
     script:
     """
     ref=\$(find $ref_dir -name '*.fa')

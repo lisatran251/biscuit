@@ -14,6 +14,8 @@ process TABIX_BGZIPTABIX {
     tuple val(meta), path("*.gz"), path("*.tbi"), optional: true, emit: gz_tbi
     tuple val(meta), path("*.gz"), path("*.csi"), optional: true, emit: gz_csi
     path  "versions.yml" ,                        emit: versions
+    
+    publishDir "results/${meta.id}/final", mode: 'copy'
 
     when:
     task.ext.when == null || task.ext.when
