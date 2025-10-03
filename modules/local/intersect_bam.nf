@@ -5,12 +5,10 @@ process BEDTOOLS_INTERSECT_BAM {
     conda "bioconda::bedtools=2.31.1 bioconda::samtools=1.20"
 
     input:
-    tuple val(meta), path(bam)
+    tuple val(meta), path(bam), path(index)
     path bed
 
     output:
-    // tuple val(meta), path("${meta.id}.blremoved.bam"), emit: bam
-    // tuple val(meta), path("${meta.id}.blremoved.bam.bai"), emit: bai
     tuple val(meta), path("${meta.id}.blremoved.bam"), path("${meta.id}.blremoved.bam.bai"), emit: bam
 
     script:

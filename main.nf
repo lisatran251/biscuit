@@ -17,6 +17,6 @@ workflow {
 
     pre = PREPROCESSING(reads, reference)
 
-    VARIANT_CALLING(pre.markdup_bams, reference, pre.index, Channel.of(file(params.mask_bed)))
+    VARIANT_CALLING(pre.filtered_bams, reference, pre.index, Channel.of(file(params.mask_bed)))
 
 }

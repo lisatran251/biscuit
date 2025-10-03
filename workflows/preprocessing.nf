@@ -26,6 +26,5 @@ workflow PREPROCESSING {
         contigs      = CREATE_VALID_CONTIGS.out.contigs
         markdup_bams = SAMTOOLS_MARKDUP.out.bam
         markdup_bais = SAMTOOLS_MARKDUP.out.bai
-        filtered_bams  = FILTER_VALID_CONTIGS.out[1]  
-        filtered_bais  = FILTER_VALID_CONTIGS.out[2]
+        filtered_bams  = FILTER_VALID_CONTIGS.out.bam
 }

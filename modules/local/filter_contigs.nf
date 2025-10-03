@@ -2,11 +2,11 @@ process FILTER_VALID_CONTIGS {
     tag "${meta.id}"
 
     input:
-    tuple val(meta), path(bam)    // from markdup
-    tuple val(meta2), path(contigs)  // from contigs generator
+    tuple val(meta), path(bam)    
+    tuple val(meta2), path(contigs)  
 
     output:
-    tuple val(meta), path("${meta.id}.filtered.bam"), path("${meta.id}.filtered.bam.csi")
+    tuple val(meta), path("${meta.id}.filtered.bam"), path("${meta.id}.filtered.bam.csi"), emit: bam
 
     script:
     """
